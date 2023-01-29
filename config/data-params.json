@@ -1,5 +1,5 @@
 
 {
-    "data_fp": "data/raw"
+    "data_fp": "data/raw",
     "testdata_fp": "test/testdata/raw"
 }
