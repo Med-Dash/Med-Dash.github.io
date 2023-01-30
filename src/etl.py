@@ -6,7 +6,8 @@ import requests
 import json
 
 
-################## Used for processing csvs ##################
+################################### Used for reading in csv data ##################################
+
 
 def readData(fp):
     '''
@@ -21,7 +22,8 @@ def readData(fp):
     return OUT
 
 
-########## Used for retrieving / processing API data ##########
+################################## Used for reading in API data ###################################
+
 
 def make_request(var, start_date, end_date, PAT):
     '''
@@ -71,4 +73,10 @@ def format_text(text):
         OUT = temp
         
     return OUT
+
+
+################################### Used for reading in S3 data ####################################
+
+# TODO
+
 

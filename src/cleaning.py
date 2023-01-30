@@ -20,7 +20,3 @@ def removeNull(df, thresh):
     return OUT
 
 
-
-def mergeFood(df1, df2):
-    #TODO
-
