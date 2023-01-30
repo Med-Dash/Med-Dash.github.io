@@ -22,7 +22,7 @@ def main(targets):
     
     
     # Data cleaning, saved to temp folder
-    read  = readData(config[fp_var])
+    read  = readData(config[fp_var], 10)
     clean = removeNull(read)
     temp  = addWeekend(clean)
         
