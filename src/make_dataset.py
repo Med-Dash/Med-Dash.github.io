@@ -24,7 +24,12 @@ def main(targets):
     
     # Data cleaning, saved to temp folder
     read  = readData(config[fp_var])
-    clean = removeNull(read, 10)
+
+    remNull = removeNull(read, 10)
+    clean = typeCorrectionsOura(remNull)
+#     clean = typeCorrectionsArboleaf(remNull)
+#     clean = typeCorrectionsBiomet(remNull)
+
     temp  = addWeekend(clean)
         
     temp_fp = config[fp_var].replace('raw', 'temp')

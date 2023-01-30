@@ -1,4 +1,3 @@
-
 import os
 import numpy as np
 import pandas as pd
@@ -78,5 +77,3 @@ def format_text(text):
 ################################### Used for reading in S3 data ####################################
 
 # TODO
-
-
