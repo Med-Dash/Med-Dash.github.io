@@ -26,12 +26,12 @@ def typeCorrectionsOura(df):
 
     #dtype corrections
     #convert time from str to datetime
-    df = df.assign(date=pd.to_datetime(df["date"]))
-    df = df.assign(Bedtime Start=pd.to_datetime(df["Bedtime Start"]))
-    df = df.assign(Bedtime End=pd.to_datetime(df["Bedtime End"]))
-#     df["date"] = pd.to_datetime(df["date"])
-#     df["Bedtime Start"] = pd.to_datetime(df["Bedtime Start"])
-#     df["Bedtime End"] = pd.to_datetime(df["Bedtime End"])
+#     df = df.assign(date=pd.to_datetime(df["date"]))
+#     df = df.assign(Bedtime Start=pd.to_datetime(df["Bedtime Start"]))
+#     df = df.assign(Bedtime End=pd.to_datetime(df["Bedtime End"]))
+    df["date"] = pd.to_datetime(df["date"])
+    df["Bedtime Start"] = pd.to_datetime(df["Bedtime Start"])
+    df["Bedtime End"] = pd.to_datetime(df["Bedtime End"])
 
     #str to float
     str_to_float = ['Previous Night Score', 'Sleep Balance Score', 'Previous Day Activity Score', 'Activity Balance Score', 'HRV Balance Score', 'Temperature Trend Deviation']
