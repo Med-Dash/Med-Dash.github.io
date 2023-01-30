@@ -73,8 +73,4 @@ def typeCorrectionsBiomet(df):
 
     OUT = df.reset_index(drop=True)
     return OUT
-    
-    over = (df.isna().sum(axis=1) > thresh)
-    OUT  = df.loc[~over]
-    
-    return OUT
+   
