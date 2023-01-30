@@ -3,15 +3,17 @@ import os
 import numpy as np
 import pandas as pd
 
+from etl import readData
 
 
-def linePrep(df, cols, start_date=None, end_date='Present'):
+
+def linePrep(fp, cols, output_dir, start_date=None, end_date='Present'):
     
     '''
     Preps the desired columns for line plotting. Will use a range
     of dates to filter the data.
     
-    :param df: Cleaned DataFrame
+    :param fp: A file path pointing to the cleaned data
     :param cols: A list of columns to prepare for line plotting
     :start_date: A string in the format YYYY-MM-DD. If left as the default
     (None), it will be set to the earliest date available.
@@ -20,6 +22,8 @@ def linePrep(df, cols, start_date=None, end_date='Present'):
     :returns: None
     '''
     
+    df = readData(fp)
+    df = df.assign(date=pd.to_datetime(df['date']))
     date_col = df.columns[df.dtypes.astype(str).str.contains('datetime')][0]
     
     # Setting the start and end Timestamps
@@ -47,13 +51,13 @@ def linePrep(df, cols, start_date=None, end_date='Present'):
         
         
         
-def corrPrep(df, cols, start_date=None, end_date='Present'):
+def corrPrep(fp, cols, output_dir, start_date=None, end_date='Present'):
     
     '''
     Preps the desired columns for correlation line plotting. Will use a 
     range of dates to filter the data.
     
-    :param df: Cleaned DataFrame
+    :param fp: A file path pointing to the cleaned data
     :param cols: A list of two element lists; the inner lists contain pairs 
     of columns that are correlated
     :start_date: A string in the format YYYY-MM-DD. If left as the default
@@ -63,6 +67,8 @@ def corrPrep(df, cols, start_date=None, end_date='Present'):
     :returns: None
     '''
     
+    df = readData(fp)
+    df = df.assign(date=pd.to_datetime(df['date']))
     date_col = df.columns[df.dtypes.astype(str).str.contains('datetime')][0]
     
     # Setting the start and end Timestamps
