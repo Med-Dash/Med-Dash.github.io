@@ -8,6 +8,7 @@ import pandas as pd
 
 from etl import readData
 from cleaning import removeNull
+from cleaning import typeCorrectionsOura
 from features import addWeekend
 from plot_prep import linePrep
 
