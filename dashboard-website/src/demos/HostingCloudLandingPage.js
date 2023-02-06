@@ -18,7 +18,7 @@ export default () => {
       <Hero />
       <OurTeam />
       <TableauEmbed />
-      <Pricing />
+      {/* <Pricing /> */}
       <MainFeature 
         subheading="Reliable"
         heading="Highly Redundant Servers With Backup"

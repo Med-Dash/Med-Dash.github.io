@@ -12,7 +12,7 @@ import { SectionHeading } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
 import logoImageSrc from "images/logo-light.svg";
-import serverIllustrationImageSrc from "images/server-illustration-2.svg";
+import dashboardImage from "images/dashboard-growth.png";
 
 const PrimaryBackgroundContainer = tw.div`-mx-8 px-8 bg-primary-900 text-gray-100`;
 const Header = tw(HeaderBase)`max-w-none -mt-8 py-8 -mx-8 px-8`;
@@ -35,7 +35,7 @@ export default ({
   description = "Our medical dash aim to provide generalized information for both healthcare providers and patients.",
   primaryButtonText = "Explore Our Dashboard",
   primaryButtonUrl = "#",
-  imageSrc = serverIllustrationImageSrc,
+  imageSrc = dashboardImage,
 }) => {
   const logoLink = (
     <LogoLink href="/">
