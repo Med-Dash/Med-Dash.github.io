@@ -21,13 +21,13 @@ export default () => {
       {/* <Pricing /> */}
       <MainFeature 
         subheading="Reliable"
-        heading="Highly Redundant Servers With Backup"
+        heading="The Importance of Sleep"
         imageSrc={serverRedundancyIllustrationImageSrc}
         buttonRounded={false}
       />
       <MainFeature 
         subheading="Secure"
-        heading="State of the Art Computer Security"
+        heading="What a Good Diet Can Do For You"
         imageSrc={serverSecureIllustrationImageSrc}
         buttonRounded={false}
         textOnLeft={false}

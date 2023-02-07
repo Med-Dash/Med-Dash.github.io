@@ -74,7 +74,7 @@ export default ({
     },
     { imageSrc: SupportIconImage, title: "Aven Huang" },
     { imageSrc: CustomizeIconImage, title: "Kamen Redfield" },
-    { imageSrc: ReliableIconImage, title: "Kenneth Nguyen" },
+    { imageSrc: ReliableIconImage, title: "Kenny Nguyen" },
     { imageSrc: FastIconImage, title: "Nicole Brye" },
     { imageSrc: SimpleIconImage, title: "Josh Wang" },
     { imageSrc: SimpleIconImage, title: "Rohith Pillai" }

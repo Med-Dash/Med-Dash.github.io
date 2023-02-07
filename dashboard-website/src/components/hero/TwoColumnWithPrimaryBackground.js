@@ -32,7 +32,7 @@ const Image = tw.img`w-144 ml-auto`
 
 export default ({
   heading = "Medical Dashboards",
-  description = "Our medical dash aim to provide generalized information for both healthcare providers and patients.",
+  description = "Our medical dashboard aims to provide generalized information for both healthcare providers and patients.",
   primaryButtonText = "Explore Our Dashboard",
   primaryButtonUrl = "#",
   imageSrc = dashboardImage,
