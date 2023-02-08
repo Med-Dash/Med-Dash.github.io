@@ -29,28 +29,28 @@ const Answer = tw(motion.div)`hidden text-sm font-normal mt-4 text-gray-300`;
 
 export default ({
   subheading = "",
-  heading = "Frequently Asked Questions",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "About the Medical Dashboard",
+  description = "The Medical Dashboard was created to provide both providers and patients with a summary of their health data that is both informative and easy to read",
   faqs = [
     {
-      question: "Is lunch provided free of cost ?",
+      question: "What metrics do the dashboards provide?",
       answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+        "The dashboards currently support metrics concerning sleep (hours slept and sleep scores) as well as diet (calories per day)"
     },
     {
-      question: "Do you have 2 Bedroom suites ?",
+      question: "Where does the data come from?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "The dashboards compile data from a multitude of sources such as Oura Rings, Apple Watches, and medical records through Epic Systems"
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
+      question: "Can these dashboards be viewed through an app on our phones?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "For the time being, there is no app for the dashboards. However, you may access this website on your phone to view them."
     },
     {
-      question: "Where can I reach you for support ?",
+      question: "What technology was used to create the dashboards?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Python was used to load and clean the data which is then uploaded to Tableau to create the dashboard. The dashboard itself is hosted on a website created through GitHub Pages."
     },
     {
       question: "What kind of SLA Guarantee do you provide ? ",
