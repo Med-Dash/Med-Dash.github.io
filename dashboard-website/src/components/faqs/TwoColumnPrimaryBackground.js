@@ -50,7 +50,7 @@ export default ({
     {
       question: "What technology was used to create the dashboards?",
       answer:
-        "Python was used to load and clean the data which is then uploaded to Tableau to create the dashboard. The dashboard itself is hosted on a website created through GitHub Pages.n"
+        "Python was used to load and clean the data which is then uploaded to Tableau to create the dashboard. The dashboard itself is hosted on a website created through GitHub Pages."
     },
     {
       question: "What kind of SLA Guarantee do you provide ? ",

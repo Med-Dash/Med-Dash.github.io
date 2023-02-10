@@ -49,7 +49,7 @@ export default ({
   ),
   description = "Sleep is a very important aspect of a person's health and overall well-being. It allows the body to rest and heal and restore itself after the wear and tear it endures on a daily basis.",
   primaryButtonText = "Benefits of Good Sleep",
-  primaryButtonUrl = "https://timerse.com",
+  primaryButtonUrl = "https://newsinhealth.nih.gov/2013/04/benefits-slumber",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
