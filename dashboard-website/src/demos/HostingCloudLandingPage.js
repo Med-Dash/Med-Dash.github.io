@@ -8,6 +8,7 @@ import Testimonial from "components/testimonials/SimplePrimaryBackground.js";
 import FAQ from "components/faqs/TwoColumnPrimaryBackground.js";
 import Footer from "components/footers/Footer.js";
 import TableauEmbed from "components/TableauEmbed.js";
+import TableauScoresEmbed from "components/TableauScoresEmbed";
 import sleepIllustrationImageSrc from "images/sleep.png"
 import healthyfoodIllustrationImageSrc from "images/healthyfood.jpg"
 
@@ -17,6 +18,7 @@ export default () => {
     <AnimationRevealPage>
       <Hero />
       <OurTeam />
+      <TableauScoresEmbed/>
       <TableauEmbed />
       {/* <Pricing /> */}
       <MainFeature 

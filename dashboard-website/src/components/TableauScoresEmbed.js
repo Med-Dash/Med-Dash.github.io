@@ -3,9 +3,9 @@ import React, { useRef, useEffect } from "react";
 const { tableau } = window;
 
 
-function TableauEmbed() {
+function TableauScoresEmbed() {
     const ref = useRef(null);
-    const url = "https://public.tableau.com/views/LongitudinalDashboard/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link";
+    const url = "https://public.tableau.com/shared/RMYZPXWW7?:display_count=n&:origin=viz_share_link";
 
     function initViz () {
         new tableau.Viz(ref.current, url);
@@ -22,4 +22,4 @@ function TableauEmbed() {
 
 
 
-export default TableauEmbed;
+export default TableauScoresEmbed;
