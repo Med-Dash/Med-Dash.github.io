@@ -11,12 +11,9 @@ def addWeekend(df):
     :param df: Cleaned Oura DataFrame
     :returns: Oura DataFrame with 'day_name' and 'is_weekend' columns added
     '''
-    
 
-#     OUT = df.assign(date = pd.to_datetime(df['date']))
-
-    OUT = df.assign(date = pd.to_datetime(df['date']))
-    OUT = OUT.assign(day_name = OUT['date'].dt.day_name())
+    OUT = df.assign(date = pd.to_datetime(df['summary_date']))
+    OUT = OUT.assign(day_name = OUT['summary_date'].dt.day_name())
     OUT = OUT.assign(is_weekend = OUT['day_name'].isin(['Saturday', 'Sunday']))
     
     return OUT

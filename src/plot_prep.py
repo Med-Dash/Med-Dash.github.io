@@ -51,7 +51,7 @@ def linePrep(fp, cols, output_dir, start_date=None, end_date='Present'):
         
         
         
-def corrPrep(fp, cols, output_dir, start_date=None, end_date='Present'):
+def corrPrep(fp, cols, cnames, output_dir, start_date=None, end_date='Present'):
     
     '''
     Preps the desired columns for correlation line plotting. Will use a 
@@ -82,16 +82,31 @@ def corrPrep(fp, cols, output_dir, start_date=None, end_date='Present'):
         edate = max(df[date_col])
         
     # Prepping the data
-    for x in cols:
+    OUT = df[[date_col] + cols]
+    
+    OUT = OUT.assign(Day   = OUT[date_col].dt.day)
+    OUT = OUT.assign(Month = OUT[date_col].dt.month)
+    OUT = OUT.assign(Year  = OUT[date_col].dt.year)
+    
+    cdict = dict(zip(cols, cnames))
+    OUT = OUT.rename(columns=cdict)
+    
+    fname = 'longitudinal_data.csv'
+    sub = OUT.loc[(OUT[date_col] >= sdate) & (OUT[date_col] <= edate)]
+    sub.to_csv(os.path.join(output_dir, fname))
+                     
         
-        fname = x[0].lower().replace(' ', '') + '_' + \
-                x[1].lower().replace(' ', '') + '_corr.csv'
+    # Prepping the data
+#     for x in cols:
         
-        sub = df[[date_col, x[0], x[1]]]
-        sub = sub.loc[(sub['date'] >= sdate) & (sub['date'] <= edate)]
+#         fname = x[0].lower().replace(' ', '') + '_' + \
+#                 x[1].lower().replace(' ', '') + '_corr.csv'
         
-        # Calculate the Pearson correlation coefficient
-        corr = np.corrcoef(sub[x[0]], sub[x[1]])[0, 1]
+#         sub = df[[date_col, x[0], x[1]]]
+#         sub = sub.loc[(sub['date'] >= sdate) & (sub['date'] <= edate)]
         
-        sub.to_csv(os.path.join(output_dir, fname))
+#         # Calculate the Pearson correlation coefficient
+#         corr = np.corrcoef(sub[x[0]], sub[x[1]])[0, 1]
+        
+#         sub.to_csv(os.path.join(output_dir, fname))
         
