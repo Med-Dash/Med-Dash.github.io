@@ -1,5 +1,6 @@
 
 {
-    "data_fp": "data/raw",
-    "testdata_fp": "../test/testdata/raw/testdata.csv"
+    "data_fp": "test/testdata/raw",
+    "testdata_fp": "test/testdata/raw",
+    "sets": ["readiness", "activity"]
 }

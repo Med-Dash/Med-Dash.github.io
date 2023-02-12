@@ -1,6 +1,14 @@
 
 {
-    "cols": ["Total Sleep Duration"],
+    "line_cols": ["sleep_duration"],
+    
+    "corr_cols": ["sleep_hr_lowest", "sleep_total", "activity_cal_total",
+                  "activity_cal_active", "sleep_total_hours", "activity_steps"],
+    
+    "corr_col_names": ["hr_lowest", "total", "cal_total", 
+                       "cal_active", "Sleep", "steps"], 
+                       
     "start_date": "2022-05-13",
+                       
     "end_date": "Present"
 }

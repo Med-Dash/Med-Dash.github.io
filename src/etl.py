@@ -21,6 +21,41 @@ def readData(fp):
     return OUT
 
 
+############### Used for concatenating Oura Data (if split into multiple files) ###################
+
+def readOuraData(fp, sets):
+    '''
+    Given a file path pointing to a directory with Oura files, concatenates
+    a set of data
+    
+    :param fp: A file path pointing to a directory of Oura data files
+    :param sets: A list of strings containing the desired data sets to concatenate.
+    The sleep dataset will always be included, so this should not be included in the
+    list.
+    '''
+    files = os.listdir(fp)
+    
+    fnames = {}
+    for x in files:
+        name = x.replace('test_', '').replace('.csv', '')
+        fnames[name] = x
+        
+    
+    # Read in the sleep data, rename the columns for merging)
+    OUT = readData(os.path.join(fp, fnames['sleep']))
+    OUT.columns = 'sleep_' + OUT.columns
+    OUT = OUT.rename(columns={'sleep_summary_date':'summary_date'})
+                   
+    # Repeat a similar process for the other specified datasets, and concatentate
+    for y in sets:
+        df  = readData(os.path.join(fp, fnames[y]))
+        df.columns = y + '_' + df.columns
+        df = df.rename(columns={y + '_summary_date':'summary_date'})
+        OUT = pd.merge(OUT, df, how='left', on='summary_date')
+        
+    return OUT
+    
+
 ################################## Used for reading in API data ###################################
 
 
