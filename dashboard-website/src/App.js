@@ -105,6 +105,7 @@ import MainLandingPage from "demos/HostingCloudLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AboutOurProject from "components/features/AboutOurProject";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -120,6 +121,7 @@ export default function App() {
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
           <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="/" element={<MainLandingPage />} />
+          <Route path="/About-Our-Project" element={<AboutOurProject />} />
         </Routes>
       </Router>
     </>
