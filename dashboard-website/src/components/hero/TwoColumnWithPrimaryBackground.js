@@ -48,7 +48,7 @@ export default ({
     <NavLinks key={1}>
       <NavLink href="#">Our team</NavLink>
       <NavLink href="#">Dashboard</NavLink>
-      <NavLink href="/About-Our-Project">About our Project</NavLink>
+      <NavLink href="/#/About-Our-Project">About our Project</NavLink>
     </NavLinks>
   ];
   return (

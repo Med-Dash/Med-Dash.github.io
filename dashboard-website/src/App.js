@@ -104,7 +104,8 @@ import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "demos/HostingCloudLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+
 import AboutOurProject from "components/features/AboutOurProject";
 
 export default function App() {
