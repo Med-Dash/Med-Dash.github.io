@@ -60,7 +60,7 @@ export default () => {
         <StyledHeader links={navLinks} />
         <Content>
           <Heading>
-              Medical Dashboard
+              Longitudinal Integrative Graphical Medical Application
           </Heading>
         </Content>
       </HeroContainer>
