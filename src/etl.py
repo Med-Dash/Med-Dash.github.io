@@ -3,7 +3,8 @@ import numpy as np
 import pandas as pd
 import requests
 import json
-
+import boto3
+import time
 
 ################################### Used for reading in csv data ##################################
 
@@ -111,4 +112,26 @@ def format_text(text):
 
 ################################### Used for reading in S3 data ####################################
 
-# TODO
+def readS3(s3BucketName):
+
+    s3 = boto3.resource("s3")
+    bucket = s3.Bucket(s3BucketName)
+
+    # Loop through all the files in the bucket and append them to a list
+    files = []
+    for i in bucket.objects.all():
+        files.append(i.key)
+    
+    
+    # The main part
+    s3 = boto3.client("s3")
+
+    OUT = []
+    for x in files:
+        obj = s3.get_object(Bucket=s3BucketName, Key=x)
+        OUT.append(json.loads(obj['Body'].read().decode('utf-8')))
+        
+    return None
+    
+    
+    

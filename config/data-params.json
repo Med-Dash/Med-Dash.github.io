@@ -2,5 +2,6 @@
 {
     "data_fp": "test/testdata/raw",
     "testdata_fp": "test/testdata/raw",
-    "sets": ["readiness", "activity"]
+    "sets": ["readiness", "activity"],
+    "s3BucketName": 'dsc180-data'
 }
