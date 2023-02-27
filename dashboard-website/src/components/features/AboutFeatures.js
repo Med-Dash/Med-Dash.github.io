@@ -44,7 +44,7 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
+        "https://drive.google.com/uc?export=view&id=1_K39xSShjSusPD0QO2Md0XLJPOI0nC9j",
       title: "Introduction",
       description:
         "As health sensor technology becomes more advanced and common amongst the general population, we as data scientists are provided with a whole plethora of health related data that can provide meaningful insights to a person's health status. Our project aims to combine all the different forms of sensor data into a consolidated dashboard that will provide the user with a snapshot of their current health status."
@@ -52,7 +52,7 @@ export default () => {
 
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        "https://drive.google.com/uc?export=view&id=1zr43cNUJ_Gmchos0jvujhUqWAmlg9B06",
       title: "Background",
       description:
         "Major insufficiencies in healthcare systems today leave patients and clinicians alike wanting for a more effective way of receiving and giving care. Several major deficiencies are 1) the lack of an integrated Electronic Health Record (EHR), lifelog, and personal omics data, and 2) the lack of standardization across healthcare systems, data standards, and terminologies. This incompatibility creates inefficiencies in operating personalized medicine, leading to problems with interoperability and introducing ambiguity into the healthcare environment, especially amongst patients, their providers, and organizations. We talked to real patients who have struggled with these issues in their medical are history, and identified the core problems they were having with the way care was prescribed to them. Using this information, we proceeded to come up with a solution that could help boost the communication and understanding between patients and their healthcare providers.",
@@ -60,14 +60,14 @@ export default () => {
 
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
+        "https://drive.google.com/uc?export=view&id=1cTbxtdjDHmY3yTnR1rrP019hAL0DuAGz",
       title: "Data Collection",
       description:
         "We were given data from volunteer patients that were eager to help with our project. The data comes from the Oura Ring API and includes variables such as: heart rate, calories burned, number of steps, etc.",
     },
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
+        "https://drive.google.com/uc?export=view&id=1bGF6Jhc8zjGdHE-PdjfRtHTe90KubK8A",
       title: "Methods",
       description:
         "We used Tableau as the primary tool to integrate visualizations onto our website while using Pandas and Numpy to create a pipeline that is designed to pull, read, clean, standardize, and add features to the data given to our team from the Oura Ring Apple Health APIs. To host our work, we used React.js hosted on Github Pages  to create a website that would allow the user to interact with the visualizations. We also leveraged Sci-kit learn to incorporate predictive analytics in regards to determining if a reading was taken on a weekday or weekend.",
