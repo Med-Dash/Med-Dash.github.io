@@ -45,7 +45,7 @@ export default () => {
     {
       imageSrc:
         "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
-      title: "Introduction",
+      title: "Hello Nicole",
       description:
         "As health sensor technology becomes more advanced and common amongst the general population, we as data scientists are provided with a whole plethora of health related data that can provide meaningful insights to a person's health status. Our project aims to combine all the different forms of sensor data into a consolidated dashboard that will provide the user with a snapshot of their current health status."
     },
@@ -63,14 +63,14 @@ export default () => {
         "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
       title: "Data Collection",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "We were given data from volunteer patients that were eager to help with our project. The data comes from the Oura Ring API and includes variables such as: heart rate, calories burned, number of steps, etc.",
     },
     {
       imageSrc:
         "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
       title: "Methods",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "We used Tableau as the primary tool to integrate visualizations onto our website while using Pandas and Numpy to create a pipeline that is designed to pull, read, clean, standardize, and add features to the data given to our team from the Oura Ring Apple Health APIs. To host our work, we used React.js hosted on Github Pages  to create a website that would allow the user to interact with the visualizations. We also leveraged Sci-kit learn to incorporate predictive analytics in regards to determining if a reading was taken on a weekday or weekend.",
     }
   ];
 
