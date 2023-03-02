@@ -15,7 +15,7 @@ import FastIconImage from "images/fast-icon.svg";
 import ReliableIconImage from "images/reliable-icon.svg";
 import SimpleIconImage from "images/simple-icon.svg";
 
-const Container = tw.div`relative bg-primary-900 -mx-8 px-8 text-gray-100`;
+const Container = tw.div`relative bg-primary-800 -mx-8 px-8 text-gray-100`;
 
 const ThreeColumnContainer = styled.div`
   ${tw`flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center max-w-screen-lg mx-auto py-20 md:py-24`}
@@ -56,7 +56,7 @@ export default ({
     members = null,
   heading = "Our Team",
   subheading = "University of California, San Diego",
-  description = "We are a team of data science and bioengineering student at UC San Diego, advised by Benjamin Smarr"
+  description = "We are a team of data science and bioengineering students at UC San Diego, advised by Benjamin Smarr"
 }) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:

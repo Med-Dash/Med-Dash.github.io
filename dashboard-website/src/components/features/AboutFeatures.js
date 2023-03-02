@@ -63,7 +63,7 @@ export default () => {
         "https://drive.google.com/uc?export=view&id=1cTbxtdjDHmY3yTnR1rrP019hAL0DuAGz",
       title: "Data Collection",
       description:
-        "We were given data from volunteer patients that were eager to help with our project. The data comes from the Oura Ring API and includes variables such as: heart rate, calories burned, number of steps, etc.",
+        "We were given data from volunteer patients that were eager to help with our project. The data comes from the Oura Ring API and includes variables such as: heart rate, calories burned, number of steps, etc. This is unique from other dashboards as we are obtaining the data from the patients themselves that they provide from different sources",
     },
     {
       imageSrc:
