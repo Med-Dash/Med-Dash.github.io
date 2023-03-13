@@ -39,7 +39,7 @@ export default () => {
       />
       {/* <Testimonial /> */}
       <FAQ />
-      <Footer />
+      {/* <Footer /> */}
     </AnimationRevealPage>
   );
 }

@@ -29,8 +29,8 @@ const Answer = tw(motion.div)`hidden text-sm font-normal mt-4 text-gray-300`;
 
 export default ({
   subheading = "",
-  heading = "About the Medical Dashboard",
-  description = "The Medical Dashboard was created to provide both providers and patients with a summary of their health data that is both informative and easy to read",
+  heading = "About MedDash",
+  description = "MedDash was created to provide both providers and patients with a summary of their health data that is both informative and easy to read",
   faqs = [
     {
       question: "What metrics do the dashboards provide?",
