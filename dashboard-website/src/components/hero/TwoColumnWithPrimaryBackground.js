@@ -37,7 +37,6 @@ const Hero = ({
   heading = "Medical Dashboards",
   description = "Our medical dashboard aims to provide generalized information for both healthcare providers and patients.",
   primaryButtonText = "Explore Our Dashboard",
-  primaryButtonUrl = "#",
   imageSrc = dashboardImage, 
   }) => {
     const logoLink = (
@@ -48,8 +47,8 @@ const Hero = ({
     );
     const navLinks = [
       <NavLinks key={1}>
-        <NavLink  onClick={() => ourTeamRef.current.scrollIntoView({ behavior: "smooth" })}>Our Team</NavLink>
-        <NavLink onClick={() => dashboardRef.current.scrollIntoView({ behavior: "smooth" })}>Dashboard</NavLink>
+        <NavLink  onClick={() => ourTeamRef.current.scrollIntoView({ behavior: "smooth" })} >Our Team</NavLink>
+        <NavLink onClick={() => dashboardRef.current.scrollIntoView({ behavior: "smooth" })} >Dashboard</NavLink>
         <NavLink href="/#/About-Our-Project">About our Project</NavLink>
       </NavLinks>
     ];
@@ -63,7 +62,7 @@ const Hero = ({
                 <TextColumn>
                   <Heading>{heading}</Heading>
                   <Description>{description}</Description>
-                  <PrimaryButton as="a" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
+                  <PrimaryButton as="a" onClick={() => dashboardRef.current.scrollIntoView({ behavior: "smooth" })} >{primaryButtonText}</PrimaryButton>
                 </TextColumn>
                 <IllustrationColumn>
                   <Image src={imageSrc} />
