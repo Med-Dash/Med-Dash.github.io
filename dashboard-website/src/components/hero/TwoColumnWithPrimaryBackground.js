@@ -33,6 +33,7 @@ const Image = tw.img`w-144 ml-auto`
 
 const Hero = ({ 
   ourTeamRef, 
+  dashboardRef,
   heading = "Medical Dashboards",
   description = "Our medical dashboard aims to provide generalized information for both healthcare providers and patients.",
   primaryButtonText = "Explore Our Dashboard",
@@ -48,7 +49,7 @@ const Hero = ({
     const navLinks = [
       <NavLinks key={1}>
         <NavLink  onClick={() => ourTeamRef.current.scrollIntoView({ behavior: "smooth" })}>Our Team</NavLink>
-        <NavLink href="#">Dashboard</NavLink>
+        <NavLink onClick={() => dashboardRef.current.scrollIntoView({ behavior: "smooth" })}>Dashboard</NavLink>
         <NavLink href="/#/About-Our-Project">About our Project</NavLink>
       </NavLinks>
     ];

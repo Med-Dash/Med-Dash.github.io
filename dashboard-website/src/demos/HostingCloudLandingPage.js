@@ -16,11 +16,12 @@ import healthyfoodIllustrationImageSrc from "images/healthyfood.jpg"
 
 export default () => {
   const ourTeamRef = useRef(null);
+  const dashboardRef = useRef(null);
   return (
     <AnimationRevealPage>
-      <Hero ourTeamRef={ourTeamRef} />
+      <Hero ourTeamRef={ourTeamRef} dashboardRef={dashboardRef}/>
       <OurTeam  ref={ourTeamRef}/>
-      <TableauScoresEmbed/>
+      <TableauScoresEmbed ref={dashboardRef}/>
       <TableauEmbed />
       {/* <Pricing /> */}
       <MainFeature 

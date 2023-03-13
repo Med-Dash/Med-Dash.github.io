@@ -2,9 +2,8 @@ import React, { useRef, useEffect } from "react";
 
 const { tableau } = window;
 
-
-function TableauScoresEmbed() {
-    const ref = useRef(null);
+const TableauScoresEmbed = React.forwardRef((props, ref) => {
+    const dref = useRef(null);
     const url = "https://public.tableau.com/shared/RMYZPXWW7?:display_count=n&:origin=viz_share_link";
 
     function initViz () {
@@ -14,11 +13,11 @@ function TableauScoresEmbed() {
         initViz();
     }, [])
     return (
-        <div>
-            <div ref={ref}></div>
+        <div ref={ref}>
+            <div ref={dref}></div>
         </div>
     );
-}
+});
 
 
 
