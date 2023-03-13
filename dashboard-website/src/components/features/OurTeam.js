@@ -8,6 +8,9 @@ import { SectionDescription } from "components/misc/Typography.js";
 
 import defaultCardImage from "images/shield-icon.svg";
 
+
+import JoshProfile from "images/josh.jpg";
+import AvenProfile from "images/Aven.JPG";
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomizeIconImage from "images/customize-icon.svg";
@@ -33,9 +36,9 @@ const Column = styled.div`
 const Card = styled.div`
   ${tw`flex flex-col items-center sm:items-start text-center sm:text-left h-full mx-4 px-2 py-8`}
   .imageContainer {
-    ${tw`bg-gray-100 text-center rounded-full p-5 flex-shrink-0`}
+    ${tw`bg-gray-100 text-center rounded-full flex-shrink-0`}
     img {
-      ${tw`w-6 h-6`}
+      ${tw`w-20 h-20`}
     }
   }
 
@@ -72,11 +75,11 @@ const DSCmembers = [
     title: "Anjana Sriram",
     description: "We strictly only deal with vendors that provide top notch security infrastructure."
   },
-  { imageSrc: SupportIconImage, title: "Aven Huang" },
+  { imageSrc: AvenProfile, title: "Aven Huang" },
   { imageSrc: CustomizeIconImage, title: "Kamen Redfield" },
   { imageSrc: ReliableIconImage, title: "Kenny Nguyen" },
   { imageSrc: FastIconImage, title: "Nicole Brye" },
-  { imageSrc: SimpleIconImage, title: "Josh Wang" },
+  { imageSrc: JoshProfile, title: "Josh Wang" },
   { imageSrc: SimpleIconImage, title: "Rohith Pillai" }
 ];
 
@@ -93,7 +96,12 @@ return (
         <Column key={i}>
           <Card>
             <span className="imageContainer">
-              <img src={card.imageSrc || defaultCardImage} alt="" />
+              <img src={card.imageSrc || defaultCardImage} alt="profile picture" 
+              style={{
+                borderRadius: "50%",
+                display: "block"
+              }}
+            />
             </span>
             <span className="textContainer">
               <span className="title">{card.title || "Fully Secure"}</span>
