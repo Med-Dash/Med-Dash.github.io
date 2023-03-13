@@ -75,7 +75,7 @@ const DSCmembers = [
   {
     imageSrc: AnjanaProfile,
     title: "Anjana Sriram",
-    description: "Anjana is a graduate of UC San Diego's Halicioglu Data Science Institute. She is passionate about using data for good, and hopes to create a data-driven world that improves lives for everyone."
+    description: "Anjana is a graduate of UC San Diego's Halicioglu Data Science Institute. She is passionate about using data for good, and hopes to create a data-driven world that improves lives for everyone. After graduating this winter, she will be starting work as a Data Scientist for Disney streaming!"
   },
   { imageSrc: AvenProfile, 
     title: "Aven Huang",
@@ -85,7 +85,7 @@ const DSCmembers = [
     descriptio: "Kamen is clutch with Tableau changes" },
   { imageSrc: KennyProfile, 
     title: "Kenny Nguyen",
-    description: "Kenny is a graduate of the Halicioglu Data Science Institute at UC San Diego. His professional interests lie in leveraging data science to make health care more accessible and equitable for all demographics." },
+    description: "Kenny is a graduate of the Halicioglu Data Science Institute at UC San Diego. His professional interests lie in leveraging data science to make health care more accessible and equitable for all demographics. After graduation, he will begin work as a Data Scientist at Foundation Risk Partners." },
   { imageSrc: NicoleProfile, 
     title: "Nicole Brye",
     description: "Im sorry I thought ur medal was a participation medal :)" },
