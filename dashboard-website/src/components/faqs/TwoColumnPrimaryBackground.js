@@ -40,27 +40,27 @@ export default ({
     {
       question: "Where does the data come from?",
       answer:
-        "The dashboards compile data from a multitude of sources such as Oura Rings, Apple Watches, and medical records through Epic Systems"
+        "MedDash compiles data from a multitude of sources such as Oura Rings, Apple Watches, and medical records through Epic Systems"
     },
     {
-      question: "Can these dashboards be viewed through an app on our phones?",
+      question: "Can MedDash be viewed on a mobile app?",
       answer:
         "For the time being, there is no app for the dashboards. However, you may access this website on your phone to view them."
     },
     {
-      question: "What technology was used to create the dashboards?",
+      question: "What technology was used to create MedDash?",
       answer:
         "Python was used to load and clean the data which is then uploaded to Tableau to create the dashboard. The dashboard itself is hosted on a website created through GitHub Pages."
     },
     {
-      question: "What kind of SLA Guarantee do you provide ? ",
+      question: "What makes MedDash unique or different from existing dashboards?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "MedDash is different due to its integration of data from multiple wearable health devices with predictive health features into a single platform."
     },
     {
-      question: "Where are the servers located ?",
+      question: "What features would be added to MedDash in the future?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Ideally, MedDash would incorporate EHR records as well as an automated data collection, uploading, and visualization pipeline.",
     }
   ]
 }) => {
