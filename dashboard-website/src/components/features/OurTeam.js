@@ -56,7 +56,7 @@ const ourTeam = React.forwardRef( ({
   members = null,
   heading = "Our Team",
   subheading = "University of California, San Diego",
-  description = "We are a team of data science and bioengineering students at UC San Diego, advised by Benjamin Smarr"
+  description = "We are a team of Data science and Bioengineering students at UC San Diego, advised by Dr. Benjamin Smarr"
 }, ref) => {
 /*
  * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -70,14 +70,26 @@ const DSCmembers = [
   {
     imageSrc: ShieldIconImage,
     title: "Anjana Sriram",
-    description: "We strictly only deal with vendors that provide top notch security infrastructure."
+    description: "Anajana is a really talented singer"
   },
-  { imageSrc: SupportIconImage, title: "Aven Huang" },
-  { imageSrc: CustomizeIconImage, title: "Kamen Redfield" },
-  { imageSrc: ReliableIconImage, title: "Kenny Nguyen" },
-  { imageSrc: FastIconImage, title: "Nicole Brye" },
-  { imageSrc: SimpleIconImage, title: "Josh Wang" },
-  { imageSrc: SimpleIconImage, title: "Rohith Pillai" }
+  { imageSrc: SupportIconImage, 
+    title: "Aven Huang",
+    description: "Aven saved my butt too many times on this website" },
+  { imageSrc: CustomizeIconImage, 
+    title: "Kamen Redfield",
+    descriptio: "Kamen is clutch with Tableau changes" },
+  { imageSrc: ReliableIconImage, 
+    title: "Kenny Nguyen",
+    description: "I just work here idk" },
+  { imageSrc: FastIconImage, 
+    title: "Nicole Brye",
+    description: "Im sorry I thought ur medal was a participation medal :)" },
+  { imageSrc: SimpleIconImage, 
+    title: "Josh Wang",
+    description: "Josh also very clutch with tableau thank you thank you" },
+  { imageSrc: SimpleIconImage, 
+    title: "Rohith Pillai",
+    description: "Rohith mr backend man" }
 ];
 
 if (!members) members = DSCmembers;
@@ -98,7 +110,7 @@ return (
             <span className="textContainer">
               <span className="title">{card.title || "Fully Secure"}</span>
               <p className="description">
-                {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
+                {card.description || "Hello we need to add our info here"}
               </p>
             </span>
           </Card>
