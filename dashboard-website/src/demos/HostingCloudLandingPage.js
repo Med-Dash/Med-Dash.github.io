@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useRef }  from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
 import OurTeam from "components/features/OurTeam";
@@ -15,10 +15,11 @@ import healthyfoodIllustrationImageSrc from "images/healthyfood.jpg"
 
 
 export default () => {
+  const ourTeamRef = useRef(null);
   return (
     <AnimationRevealPage>
-      <Hero />
-      <OurTeam />
+      <Hero ourTeamRef={ourTeamRef} />
+      <OurTeam  ref={ourTeamRef}/>
       <TableauScoresEmbed/>
       <TableauEmbed />
       {/* <Pricing /> */}

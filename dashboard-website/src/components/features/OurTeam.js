@@ -52,59 +52,61 @@ const Card = styled.div`
   }
 `;
 
-export default ({
-    members = null,
+const ourTeam = React.forwardRef( ({
+  members = null,
   heading = "Our Team",
   subheading = "University of California, San Diego",
   description = "We are a team of data science and bioengineering students at UC San Diego, advised by Benjamin Smarr"
-}) => {
-  /*
-   * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
-   *  1) imageSrc - the image shown at the top of the card
-   *  2) title - the title of the card
-   *  3) description - the description of the card
-   *  If a key for a particular card is not provided, a default value is used
-   */
+}, ref) => {
+/*
+ * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
+ *  1) imageSrc - the image shown at the top of the card
+ *  2) title - the title of the card
+ *  3) description - the description of the card
+ *  If a key for a particular card is not provided, a default value is used
+ */
 
-  const DSCmembers = [
-    {
-      imageSrc: ShieldIconImage,
-      title: "Anjana Sriram",
-      description: "We strictly only deal with vendors that provide top notch security infrastructure."
-    },
-    { imageSrc: SupportIconImage, title: "Aven Huang" },
-    { imageSrc: CustomizeIconImage, title: "Kamen Redfield" },
-    { imageSrc: ReliableIconImage, title: "Kenny Nguyen" },
-    { imageSrc: FastIconImage, title: "Nicole Brye" },
-    { imageSrc: SimpleIconImage, title: "Josh Wang" },
-    { imageSrc: SimpleIconImage, title: "Rohith Pillai" }
-  ];
+const DSCmembers = [
+  {
+    imageSrc: ShieldIconImage,
+    title: "Anjana Sriram",
+    description: "We strictly only deal with vendors that provide top notch security infrastructure."
+  },
+  { imageSrc: SupportIconImage, title: "Aven Huang" },
+  { imageSrc: CustomizeIconImage, title: "Kamen Redfield" },
+  { imageSrc: ReliableIconImage, title: "Kenny Nguyen" },
+  { imageSrc: FastIconImage, title: "Nicole Brye" },
+  { imageSrc: SimpleIconImage, title: "Josh Wang" },
+  { imageSrc: SimpleIconImage, title: "Rohith Pillai" }
+];
 
-  if (!members) members = DSCmembers;
+if (!members) members = DSCmembers;
 
-  return (
-    <Container>
-      <ThreeColumnContainer>
-        {subheading && <Subheading>{subheading}</Subheading>}
-        <Heading>{heading}</Heading>
-        {description && <Description>{description}</Description>}
-        <VerticalSpacer />
-        {members.map((card, i) => (
-          <Column key={i}>
-            <Card>
-              <span className="imageContainer">
-                <img src={card.imageSrc || defaultCardImage} alt="" />
-              </span>
-              <span className="textContainer">
-                <span className="title">{card.title || "Fully Secure"}</span>
-                <p className="description">
-                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
-                </p>
-              </span>
-            </Card>
-          </Column>
-        ))}
-      </ThreeColumnContainer>
-    </Container>
-  );
-};
+return (
+  <Container ref={ref}>
+    <ThreeColumnContainer>
+      {subheading && <Subheading>{subheading}</Subheading>}
+      <Heading>{heading}</Heading>
+      {description && <Description>{description}</Description>}
+      <VerticalSpacer />
+      {members.map((card, i) => (
+        <Column key={i}>
+          <Card>
+            <span className="imageContainer">
+              <img src={card.imageSrc || defaultCardImage} alt="" />
+            </span>
+            <span className="textContainer">
+              <span className="title">{card.title || "Fully Secure"}</span>
+              <p className="description">
+                {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
+              </p>
+            </span>
+          </Card>
+        </Column>
+      ))}
+    </ThreeColumnContainer>
+  </Container>
+);
+});
+
+export default ourTeam;

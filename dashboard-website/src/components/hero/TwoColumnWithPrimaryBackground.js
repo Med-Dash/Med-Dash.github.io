@@ -31,45 +31,48 @@ const Description = tw(SectionDescription)`mt-4 max-w-2xl text-gray-100 lg:text-
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 text-sm sm:text-base px-6 py-5 sm:px-10 sm:py-5 bg-primary-400 inline-block hocus:bg-primary-500`;
 const Image = tw.img`w-144 ml-auto`
 
-export default ({
+const Hero = ({ 
+  ourTeamRef, 
   heading = "Medical Dashboards",
   description = "Our medical dashboard aims to provide generalized information for both healthcare providers and patients.",
   primaryButtonText = "Explore Our Dashboard",
   primaryButtonUrl = "#",
-  imageSrc = dashboardImage,
-}) => {
-  const logoLink = (
-    <LogoLink href="/">
-      <img src={logoImageSrc} alt="Logo" />
-      Medical Dashboard
-    </LogoLink>
-  );
-  const navLinks = [
-    <NavLinks key={1}>
-      <NavLink href="#">Our team</NavLink>
-      <NavLink href="#">Dashboard</NavLink>
-      <NavLink href="/#/About-Our-Project">About our Project</NavLink>
-    </NavLinks>
-  ];
-  return (
-    <PrimaryBackgroundContainer>
-      <Content2Xl>
-        <Header logoLink={logoLink} links={navLinks} />
-        <Container>
-          <ContentWithVerticalPadding>
-            <Row>
-              <TextColumn>
-                <Heading>{heading}</Heading>
-                <Description>{description}</Description>
-                <PrimaryButton as="a" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
-              </TextColumn>
-              <IllustrationColumn>
-                <Image src={imageSrc} />
-              </IllustrationColumn>
-            </Row>
-          </ContentWithVerticalPadding>
-        </Container>
-      </Content2Xl>
-    </PrimaryBackgroundContainer>
-  );
-};
+  imageSrc = dashboardImage, 
+  }) => {
+    const logoLink = (
+      <LogoLink href="/">
+        <img src={logoImageSrc} alt="Logo" />
+        Medical Dashboard
+      </LogoLink>
+    );
+    const navLinks = [
+      <NavLinks key={1}>
+        <NavLink  onClick={() => ourTeamRef.current.scrollIntoView({ behavior: "smooth" })}>Our Team</NavLink>
+        <NavLink href="#">Dashboard</NavLink>
+        <NavLink href="/#/About-Our-Project">About our Project</NavLink>
+      </NavLinks>
+    ];
+    return (
+      <PrimaryBackgroundContainer>
+        <Content2Xl>
+          <Header logoLink={logoLink} links={navLinks} />
+          <Container>
+            <ContentWithVerticalPadding>
+              <Row>
+                <TextColumn>
+                  <Heading>{heading}</Heading>
+                  <Description>{description}</Description>
+                  <PrimaryButton as="a" href={primaryButtonUrl}>{primaryButtonText}</PrimaryButton>
+                </TextColumn>
+                <IllustrationColumn>
+                  <Image src={imageSrc} />
+                </IllustrationColumn>
+              </Row>
+            </ContentWithVerticalPadding>
+          </Container>
+        </Content2Xl>
+      </PrimaryBackgroundContainer>
+    );
+  };
+
+export default Hero;
