@@ -41,10 +41,10 @@ export default () => {
         <WideColumn>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Medical Dashboard</LogoText>
+            <LogoText>MedDash</LogoText>
           </LogoContainer>
           <CompanyDescription>
-          Medical dashboard aims to provide generalized information for both healthcare providers and patients.
+          Medical dashboard aims to provide consolidated health information for both healthcare providers and patients.
           </CompanyDescription>
          
         </WideColumn>

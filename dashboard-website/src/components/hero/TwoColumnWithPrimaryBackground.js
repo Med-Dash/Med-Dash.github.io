@@ -34,15 +34,15 @@ const Image = tw.img`w-144 ml-auto`
 const Hero = ({ 
   ourTeamRef, 
   dashboardRef,
-  heading = "Medical Dashboards",
-  description = "Our medical dashboard aims to provide generalized information for both healthcare providers and patients.",
-  primaryButtonText = "Explore Our Dashboard",
+  heading = "MedDash",
+  description = "MedDash is a comphrehensive medical dashboard that aims to consolidate multiple sources of data ",
+  primaryButtonText = "Explore MedDash Below!",
   imageSrc = dashboardImage, 
   }) => {
     const logoLink = (
       <LogoLink href="/">
         <img src={logoImageSrc} alt="Logo" />
-        Medical Dashboard
+        MedDash
       </LogoLink>
     );
     const navLinks = [
