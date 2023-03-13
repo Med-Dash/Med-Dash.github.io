@@ -39,16 +39,7 @@ export default () => {
   const navLinks = [
     <NavLinks key={1}>
       <NavLink href="#">
-      Introduction
-      </NavLink>
-      <NavLink href="#">
-      Background Information
-      </NavLink>
-      <NavLink href="#">
-      Data
-      </NavLink>
-      <NavLink href="#">
-      Methods
+      Back To Main Website
       </NavLink>
     </NavLinks>,
   ];
