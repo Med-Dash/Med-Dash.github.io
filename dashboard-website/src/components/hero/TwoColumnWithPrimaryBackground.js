@@ -35,7 +35,7 @@ const Hero = ({
   ourTeamRef, 
   dashboardRef,
   heading = "MedDash",
-  description = "MedDash aims to consolidate multiple sources of health data into a comphrehensive medical dashboard",
+  description = "MedDash aims to consolidate multiple sources of health data into a comprehensive medical dashboard",
   primaryButtonText = "Explore MedDash Below!",
   imageSrc = dashboardImage, 
   }) => {
