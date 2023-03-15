@@ -9,7 +9,7 @@ const aboutOurProject = () => {
   <AnimationRevealPage>
     <Hero />
     <Features />
-    <Footer />
+    {/* <Footer /> */}
   </AnimationRevealPage>
   );
 }

@@ -9,13 +9,13 @@ import { SectionDescription } from "components/misc/Typography.js";
 import defaultCardImage from "images/shield-icon.svg";
 
 
-import JoshProfile from "images/josh.jpg";
-import AvenProfile from "images/Aven.JPG";
-import ShieldIconImage from "images/shield-icon.svg";
-import CustomizeIconImage from "images/customize-icon.svg";
-import FastIconImage from "images/fast-icon.svg";
-import ReliableIconImage from "images/reliable-icon.svg";
-import SimpleIconImage from "images/simple-icon.svg";
+import JoshProfile from "images/Joshprofile.png";
+import AvenProfile from "images/Avenprofile.png";
+import KennyProfile from "images/kennynguyenprofile.png";
+import AnjanaProfile from "images/Anjanaprofile.png";
+import NicoleProfile from "images/Nicoleprofile.png";
+import RohithProfile from "images/Rohithprofile.png";
+import KamenProfile from "images/Kamenprofile.png";
 
 const Container = tw.div`relative bg-primary-800 -mx-8 px-8 text-gray-100`;
 
@@ -58,7 +58,7 @@ const ourTeam = React.forwardRef( ({
   members = null,
   heading = "Our Team",
   subheading = "University of California, San Diego",
-  description = "We are a team of Data science and Bioengineering students at UC San Diego, advised by Dr. Benjamin Smarr"
+  description = "We are a team of Data Science students at UC San Diego (supported by a group of Bioengineering students), advised by Dr. Benjamin Smarr"
 }, ref) => {
 /*
  * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -70,26 +70,26 @@ const ourTeam = React.forwardRef( ({
 
 const DSCmembers = [
   {
-    imageSrc: ShieldIconImage,
+    imageSrc: AnjanaProfile,
     title: "Anjana Sriram",
-    description: "Anajana is a really talented singer"
+    description: "Anjana is a graduate of UC San Diego's Halicioglu Data Science Institute. She is passionate about using data for good, and hopes to create a data-driven world that improves lives for everyone. After graduating this winter, she will be starting work as a Data Scientist for Disney streaming!"
   },
  { imageSrc: AvenProfile, 
     title: "Aven Huang",
-    description: "Aven saved my butt too many times on this website" },
-  { imageSrc: CustomizeIconImage, 
+    description: "Aven is a graduate of UC San Diego’s Halicioglu Data Science Institute. She is interested in combining software engineering and data science practices to build tools. After graduation, she will begin work as a Software Engineer at Sprout Social." },
+  { imageSrc: KamenProfile, 
     title: "Kamen Redfield",
-    descriptio: "Kamen is clutch with Tableau changes" },
-  { imageSrc: ReliableIconImage, 
+    description: "Kamen Redfield is a graduate of UC San Diego's Halicioglu Data Science Institute. His professional interests lie in Natural Language Processing and will be looking to work as a Data Scientist in this field before returning back for graduate school." },
+  { imageSrc: KennyProfile, 
     title: "Kenny Nguyen",
-    description: "I just work here idk" },
-  { imageSrc: FastIconImage, 
+    description: "Kenny is a graduate of the Halicioglu Data Science Institute at UC San Diego. His professional interests lie in leveraging data science to make health care more accessible and equitable for all demographics. After graduation, he will begin work as a Data Scientist at Foundation Risk Partners." },
+  { imageSrc: NicoleProfile, 
     title: "Nicole Brye",
     description: "Im sorry I thought ur medal was a participation medal :)" },
   { imageSrc: JoshProfile, 
-    title: "Josh Wang",
-    description: "Josh also very clutch with tableau thank you thank you" },
-  { imageSrc: SimpleIconImage, 
+    title: "Qiaoxuan (Josh) Wang",
+    description: "Qiaoxuan (Josh) is a graduate of the Halicioglu Data Science Institute at UC San Diego and an incoming Data Analyst at AT&T. He seeks to use his background in data science and project management to improve the lives of others through healthcare, infrastructure, and entrepreneurship." },
+  { imageSrc: RohithProfile, 
     title: "Rohith Pillai",
     description: "Rohith mr backend man" }
 ];

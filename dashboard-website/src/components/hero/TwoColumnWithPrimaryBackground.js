@@ -15,7 +15,7 @@ import logoImageSrc from "images/dashboard_icon.svg";
 import dashboardImage from "images/dashboard-growth.png";
 import AboutOurProject from "demos/AboutOurProject.js";
 
-const PrimaryBackgroundContainer = tw.div`-mx-8 px-8 bg-primary-900 text-gray-100`;
+const PrimaryBackgroundContainer = tw.div`-mx-8 px-8 bg-primary-800 text-gray-100`;
 const Header = tw(HeaderBase)`max-w-none -mt-8 py-8 -mx-8 px-8`;
 const NavLink = tw(NavLinkBase)`lg:text-gray-100 lg:hocus:text-gray-300 lg:hocus:border-gray-100`;
 const LogoLink = tw(LogoLinkBase)`text-gray-100 hocus:text-gray-300`;
@@ -35,7 +35,7 @@ const Hero = ({
   ourTeamRef, 
   dashboardRef,
   heading = "MedDash",
-  description = "MedDash aims to consolidate multiple sources of health data into a comphrehensive medical dashboard",
+  description = "MedDash aims to consolidate multiple sources of health data into a comprehensive medical dashboard",
   primaryButtonText = "Explore MedDash Below!",
   imageSrc = dashboardImage, 
   }) => {
