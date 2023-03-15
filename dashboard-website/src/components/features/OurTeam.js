@@ -14,6 +14,7 @@ import AvenProfile from "images/Avenprofile.png";
 import KennyProfile from "images/kennynguyenprofile.png";
 import AnjanaProfile from "images/Anjanaprofile.png";
 import NicoleProfile from "images/Nicoleprofile.png";
+import NicoleMedalProfile from "images/nicole_medal.png";
 import RohithProfile from "images/Rohithprofile.png";
 import KamenProfile from "images/Kamenprofile.png";
 
@@ -85,7 +86,7 @@ const DSCmembers = [
     description: "Kenny is a graduate of the Halicioglu Data Science Institute at UC San Diego. His professional interests lie in leveraging data science to make health care more accessible and equitable for all demographics. After graduation, he will begin work as a Data Scientist at Foundation Risk Partners." },
   { imageSrc: NicoleProfile, 
     title: "Nicole Brye",
-    description: "Im sorry I thought ur medal was a participation medal :)" },
+    description: "Nicole is a graduate of the Halicioglu Data Science Institute at UC San Diego. Her interests are at the intersection of data science and health care, and post-graduation she plans to attend graduate school." },
   { imageSrc: JoshProfile, 
     title: "Qiaoxuan (Josh) Wang",
     description: "Qiaoxuan (Josh) is a graduate of the Halicioglu Data Science Institute at UC San Diego and an incoming Data Analyst at AT&T. He seeks to use his background in data science and project management to improve the lives of others through healthcare, infrastructure, and entrepreneurship." },
