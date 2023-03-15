@@ -11,7 +11,6 @@ import defaultCardImage from "images/shield-icon.svg";
 
 import JoshProfile from "images/josh.jpg";
 import AvenProfile from "images/Aven.JPG";
-import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomizeIconImage from "images/customize-icon.svg";
 import FastIconImage from "images/fast-icon.svg";
@@ -75,7 +74,7 @@ const DSCmembers = [
     title: "Anjana Sriram",
     description: "Anajana is a really talented singer"
   },
-  { imageSrc: AvenProfile, 
+ { imageSrc: AvenProfile, 
     title: "Aven Huang",
     description: "Aven saved my butt too many times on this website" },
   { imageSrc: CustomizeIconImage, 
