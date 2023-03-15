@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.cb1bfda3.js",
+    "main.js": "/static/js/main.7e7c4917.js",
     "static/media/dashboard-growth.png": "/static/media/dashboard-growth.9e985101d7d337104387.png",
     "static/media/Rohithprofile.png": "/static/media/Rohithprofile.b43fa07b2552b2e06609.png",
     "static/media/Nicoleprofile.png": "/static/media/Nicoleprofile.dde3c3cd2f0c470c4022.png",
@@ -9,7 +9,6 @@
     "static/media/Joshprofile.png": "/static/media/Joshprofile.7d43a4400c5a8660f818.png",
     "static/media/Avenprofile.png": "/static/media/Avenprofile.cf9cda5ec93589956ed2.png",
     "static/media/kennynguyenprofile.png": "/static/media/kennynguyenprofile.04d7415d1607574005a6.png",
-    "static/media/nicole_medal.png": "/static/media/nicole_medal.e77842d3a9e3bff6c0b5.png",
     "static/media/healthyfood.jpg": "/static/media/healthyfood.5169a7c025d4a87c454a.jpg",
     "static/media/sleep.png": "/static/media/sleep.95e6c4202736e99a55cd.png",
     "static/media/team-illustration-2.svg": "/static/media/team-illustration-2.76aa0427e037826d4453f8791ee544e3.svg",
@@ -24,9 +23,9 @@
     "static/media/logo.svg": "/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg",
     "static/media/chevron-down.svg": "/static/media/chevron-down.c3e123cf78bc368a192f3e2dee97daba.svg",
     "static/media/facebook-icon.svg": "/static/media/facebook-icon.8f6512c4ee4f21763666f0f3b69d970d.svg",
-    "main.cb1bfda3.js.map": "/static/js/main.cb1bfda3.js.map"
+    "main.7e7c4917.js.map": "/static/js/main.7e7c4917.js.map"
   },
   "entrypoints": [
-    "static/js/main.cb1bfda3.js"
+    "static/js/main.7e7c4917.js"
   ]
 }
