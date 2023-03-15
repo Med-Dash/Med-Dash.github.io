@@ -91,7 +91,7 @@ const DSCmembers = [
     description: "Qiaoxuan (Josh) is a graduate of the Halicioglu Data Science Institute at UC San Diego and an incoming Data Analyst at AT&T. He seeks to use his background in data science and project management to improve the lives of others through healthcare, infrastructure, and entrepreneurship." },
   { imageSrc: RohithProfile, 
     title: "Rohith Pillai",
-    description: "Rohith mr backend man" }
+    description: "Rohith is a graduate of the Halicioglu Data Science Institute at UC San Diego. His professional interests lie somewhere between analytics and machine learning, and will be looking forward to working in this field soon after graduating." }
 ];
 
 if (!members) members = DSCmembers;
