@@ -14,7 +14,6 @@ import AvenProfile from "images/Avenprofile.png";
 import KennyProfile from "images/kennynguyenprofile.png";
 import AnjanaProfile from "images/Anjanaprofile.png";
 import NicoleProfile from "images/Nicoleprofile.png";
-import NicoleMedalProfile from "images/nicole_medal.png";
 import RohithProfile from "images/Rohithprofile.png";
 import KamenProfile from "images/Kamenprofile.png";
 
