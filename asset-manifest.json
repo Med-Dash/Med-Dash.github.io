@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.7e7c4917.js",
+    "main.js": "/static/js/main.444c5dcf.js",
     "static/media/dashboard-growth.png": "/static/media/dashboard-growth.9e985101d7d337104387.png",
     "static/media/Rohithprofile.png": "/static/media/Rohithprofile.b43fa07b2552b2e06609.png",
     "static/media/Nicoleprofile.png": "/static/media/Nicoleprofile.dde3c3cd2f0c470c4022.png",
@@ -23,9 +23,9 @@
     "static/media/logo.svg": "/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg",
     "static/media/chevron-down.svg": "/static/media/chevron-down.c3e123cf78bc368a192f3e2dee97daba.svg",
     "static/media/facebook-icon.svg": "/static/media/facebook-icon.8f6512c4ee4f21763666f0f3b69d970d.svg",
-    "main.7e7c4917.js.map": "/static/js/main.7e7c4917.js.map"
+    "main.444c5dcf.js.map": "/static/js/main.444c5dcf.js.map"
   },
   "entrypoints": [
-    "static/js/main.7e7c4917.js"
+    "static/js/main.444c5dcf.js"
   ]
 }
